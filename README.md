@@ -84,3 +84,105 @@ Ensure the kkk.csv file has at least Year and Cause columns for this to work cor
 📎 License
 This project is open-source and available under the MIT License (if you want to add one).
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Analysis 2 
+Web Server Log Analysis
+📑 Project Overview
+This project parses the Calgary web server access log file, converts it into a structured CSV format, and performs exploratory data analysis using Python, Pandas, Seaborn, and Matplotlib.
+It visualizes key metrics like HTTP status distribution, most frequent hosts, most requested files, and API request patterns over time.
+________________________________________
+📦 Dependencies
+Make sure to install the following libraries before running the notebook:
+pip install pandas matplotlib seaborn numpy requests
+📁 Files Included
+calgary_acess_log.txt → Raw web server log file
+
+calgary_api_requests.csv → Parsed and cleaned structured data
+
+log_analysis.ipynb → Jupyter notebook containing the parsing, EDA, and visualization code
+
+README.md → Project description and instructions (this file)
+
+🔍 Project Workflow
+1️⃣ Parse Log File
+Using regex, extract important components like:
+
+Host
+
+Datetime
+
+HTTP Method
+
+Requested File
+
+Protocol
+
+Status Code
+
+Response Size
+
+And save them into a CSV file calgary_api_requests.csv
+
+2️⃣ Load and Clean Data
+Load CSV into a pandas DataFrame
+
+Drop missing values
+
+Convert response size to numeric
+
+Convert datetime strings to proper datetime format with timezone info
+
+3️⃣ Exploratory Data Analysis & Visualizations
+Distribution of HTTP Status Codes
+
+Top 10 Most Frequent Hosts
+
+Top 10 Most Requested Files
+
+Distribution of Response Sizes
+
+Identify the Most Active Day
+
+Plot Number of Requests Over Time
+
+All plots generated using Seaborn and Matplotlib.
+
+📊 Key Findings
+Most frequent host making requests
+
+Most requested file on the server
+
+Distribution of HTTP response status codes
+
+Peak days based on number of requests
+
+📌 How to Run
+Clone the repository or download the files.
+
+Install required dependencies.
+
+Run the log_analysis.ipynb notebook sequentially.
+
+Ensure calgary_acess_log.txt is in the same directory as your notebook.
+
+📚 Notes
+Datetime parsing handles timezone info using the format:
+%d/%b/%Y:%H:%M:%S %z
+Example: 24/Oct/1994:13:41:41 -0600
+
+Error handling with errors='coerce' ensures invalid datetimes are dropped cleanly.
+
+Plots are neatly styled and rotated for readability.
+
+📈 Sample Visualizations
+HTTP Status Code Distribution
+
+Top Hosts & Files Requested
+
+Response Size Histogram
+
+Daily Requests Over Time
+
+✍️ Author
+Wildreamer | 2025
+“Data speaks — listen well.” 📊✨
+
