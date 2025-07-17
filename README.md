@@ -181,6 +181,33 @@ Top Hosts & Files Requested
 Response Size Histogram
 
 Daily Requests Over Time
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Project 3
+# 📄 PDF-to-CSV Extractor with Python
+
+Convert structured data hidden inside PDFs into clean CSV files — automatically and efficiently!
+
+## 🚀 Features
+
+- ✅ Text extraction from PDFs using **pypdf**
+- 🔄 Data parsing and structure using **NumPy** & **Pandas**
+- 🧩 Custom delimiters for splitting text into multiple columns
+- 📊 (Optional) Quick visual check with **Matplotlib**
+- 💾 Export data as clean CSV for further analysis
+- 🎯 Ideal for invoices, reports, logs, tabular form, etc.
+
+## 💡 Why this project?
+
+Manual copy-pasting from PDFs into Excel? Ain’t nobody got time for that! This script automates the extraction process, saving time, reducing typos, and keeping your workflow consistent and scalable—even for bulk PDFs.
+
+## ⚙️ Installation
+
+1. Clone the repo:
+   ```bash
+   git clone https://github.com/yourusername/pdf-to-csv-extractor.git
+   cd pdf-to-csv-extractor
+   ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 ✍️ Author
 Wildreamer | 2025
